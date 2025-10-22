@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galería - Mi Mundo Manga</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<h1>Mi Mundo Manga</h1>
+<nav>
+<ul class="menu">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="personajes.html">Personajes</a></li>
+<li><a href="galeria.html">Galería</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<h2>Posters de anime</h2>
+<p>Una colección de imágenes destacadas. Haz clic para ver en grande.</p>
+
+
+<div class="gallery-grid">
+<a href="img/gojo.jpeg" target="_blank"><img src="img/gojo.jpeg" alt="Artwork 1"></a>
+<a href="img/levi.jpeg" target="_blank"><img src="img/levi.jpeg" alt="Artwork 2"></a>
+<a href="img/onep.jpeg" target="_blank"><img src="img/onep.jpeg" alt="Artwork 3"></a>
+<a href="img/noface.jpeg" target="_blank"><img src="img/noface.jpeg" alt="Artwork 4"></a>
+</div>
+
+
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>&copy; <span id="year3"></span> CobachBC</p>
+</div>
+</footer>
+
+
+<script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>

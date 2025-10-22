@@ -1,0 +1,51 @@
+<!doctype html>
+<body>
+<header class="site-header">
+<div class="container">
+<h1>Mi Mundo Manga</h1>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<nav>
+<ul class="menu">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="personajes.html">Personajes</a></li>
+<li><a href="galeria.html">Galería</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<h2>Contacto</h2>
+<p>Si quieres colaborar o enviar fanart, escribe a: Mundomanga@gmail.com</p>
+<form class="contact-form">
+<label>Nombre<br><input type="text" name="name" required></label>
+<label>Email<br><input type="email" name="email" required></label>
+<label>Mensaje<br><textarea name="message" rows="5" required></textarea></label>
+<button type="submit" class="btn">Enviar</button>
+</form>
+
+
+<section class="redes">
+<h3>Síguenos</h3>
+<ul>
+<li><a href="https://www.instagram.com/mundomanga.bc/">Instagram</a></li>
+<li><a href="https://www.tiktok.com/@user4mk56fek1r">TikTok</a></li>
+<li><a href="https://www.youtube.com/@mundomangabc">YouTube</a></li>
+</ul>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>&copy; <span id="year4"></span> CobachBC</p>
+</div>
+</footer>
+
+
+<script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+</body>
+</html>

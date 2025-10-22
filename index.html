@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mi Mundo Manga</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<h1>Mi Mundo Manga</h1>
+<nav>
+<ul class="menu">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="personajes.html">Personajes</a></li>
+<li><a href="galeria.html">Galería</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<section class="hero">
+<h2>Bienvenido al universo del manga</h2>
+<p>Noticias, perfiles de personajes, galerías y reseñas pensadas para fans del manga clásico y moderno.</p>
+<img src="img/coleccion.jpg" alt="Imagen principal" class="hero-img">
+</section>
+
+
+<section class="intro">
+<h3>¿Qué encontrarás aquí?</h3>
+<p>Analizamos tramas, mostramos personajes y compartimos fanart. También hay reseñas y recomendaciones.</p>
+<a class="btn" href="personajes.html">Ver personajes</a>
+</section>
+
+
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>&copy; <span id="year"></span> CobachBC — Estrada Rivera Italia.</p>
+<div class="social-links">
+<a href="https://www.instagram.com/mundomanga.bc/">Instagram</a> | <a href="https://www.tiktok.com/@user4mk56fek1r">TikTok</a> | <a href="https://www.youtube.com/@mundomangabc">YouTube</a>
+</div>
+</div>
+</footer>
+
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<li><a href="galeria.html">Galería</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<h2>Figuras</h2>
+<p>En esta pagina puedes ordenar figuras de los mejores personajes.</p>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+
+<section class="cards">
+<article class="card">
+<img src="img/nezuko.jpeg" alt="Nezuko Kamado" class="card-img">
+<h3>Nezuko Kamado figura</h3>
+<p>2,000$</p>
+</article>
+
+
+<article class="card">
+<img src="img/miku.jpeg" alt="Hatsune Miku" class="card-img">
+<h3>Hatsune Miku</h3>
+<p>600$</p>
+</article>
+</section>
+
+
+<aside class="upload-tip">
+<section class="cuenta-regresiva">
+  <h3>⏳ ¡Nuevo stock en...!</h3>
+  <div id="countdown"></div>
+</section>
+
+<script>
+  const fechaObjetivo = new Date("2025-11-01T00:00:00").getTime();
+
+  const timer = setInterval(() => {
+    const ahora = new Date().getTime();
+    const diferencia = fechaObjetivo - ahora;
+
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML =
+      `${dias} días, ${horas} horas, ${minutos} min, ${segundos} s`;
+
+    if (diferencia < 0) {
+      clearInterval(timer);
+      document.getElementById("countdown").innerHTML = "¡Ya está disponible! 🎉";
+    }
+  }, 1000);
+</script>
+
+</aside>
+
+
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>&copy; <span id="year2"></span> CobachBC</p>
+</div>
+</footer>
+
+
+<script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>
